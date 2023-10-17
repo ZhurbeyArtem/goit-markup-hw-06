@@ -5,7 +5,7 @@ body {
   letter-spacing: 0.02rem;
   color: var(--slate);
   background-color: var(--white);
-  
+  overflow: hidden;
 }
 
 * {
