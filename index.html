@@ -14,31 +14,91 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/newstyle.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container flexed-list header-container">
-      <nav class="flexed-list menu-nav">
-        <a class="logo logo-header link" href="./index.html">Web<span class="logo-text">Studio</span></a>
-        <ul class="menu-list list flexed-list">
-          <li class="menu-list-item"><a class="menu-list-link link lower" href="./index.html">Studio</a></li>
-          <li class="menu-list-item"><a class="menu-list-link link " href="./portfolio.html">Portfolio</a></li>
-          <li class="menu-list-item"><a class="menu-list-link link " href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="contacts">
-        <ul class="list flexed-list contacts-list">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
+      <a class="logo logo-header link" href="./index.html">Web<span class="logo-text">Studio</span></a>
+      <div class="js-menu-container is-open">
+        <nav class="flexed-list menu-nav">
+          <ul class="menu-list list flexed-list">
+            <li class="menu-list-item"><a class="menu-list-link link lower" href="./index.html">Studio</a></li>
+            <li class="menu-list-item"><a class="menu-list-link link " href="./portfolio.html">Portfolio</a></li>
+            <li class="menu-list-item"><a class="menu-list-link link " href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="list flexed-list contacts-list">
+            <li class="contacts-item">
+              <a href="mailto:info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
+            </li>
+            <li class="contacts-item">
+              <a href="tel:+110001111111" class="contacts-link link contacts-phone">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <div class="header-networks">
+          <ul class="flexed-list list header-list">
+          <li class="header-icons">
+            <a href="" class="header-links">
+              <svg class="header-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
           </li>
-          <li class="contacts-item">
-            <a href="tel:+110001111111" class="contacts-link link ">+11 (000) 111-11-11</a>
+          <li class="header-icons">
+            <a href="" class="header-links">
+
+              <svg class="header-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-icons">
+            <a href="" class="header-links">
+
+              <svg class="header-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-icons">
+            <a href="" class="header-links">
+
+              <svg class="header-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
+        </div>
+        <button class="close-btn js-close-menu">
+           <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+        </button>
+      </div>
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+         <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+      </button>
+
     </div>
+
   </header>
   <main>
     <section class="solution">
@@ -73,7 +133,8 @@
               </svg>
             </div>
             <h3 class="about-us-title title-large">Punctuality</h3>
-            <p class="paragraph about-us-text">Bring the key message to the brand's audience for the best price within the shortest
+            <p class="paragraph about-us-text">Bring the key message to the brand's audience for the best price within
+              the shortest
               possible time.</p>
           </li>
           <li class="about-us-item">
@@ -85,7 +146,8 @@
               </svg>
             </div>
             <h3 class="about-us-title title-large">Diligence</h3>
-            <p class="paragraph about-us-text">Research and confirm brands that present the strongest digital growth opportunities
+            <p class="paragraph about-us-text">Research and confirm brands that present the strongest digital growth
+              opportunities
               and minimize risk.
             </p>
           </li>
@@ -98,7 +160,8 @@
               </svg>
             </div>
             <h3 class="about-us-title title-large">Technologies</h3>
-            <p class="paragraph about-us-text">Design practice focused on digital experiences. We bring forth a deep passion for
+            <p class="paragraph about-us-text">Design practice focused on digital experiences. We bring forth a deep
+              passion for
               problem-solving.</p>
           </li>
         </ul>
@@ -314,7 +377,7 @@
               </svg>
             </a>
           </li>
-           <li class="customers-item">
+          <li class="customers-item">
             <a href="" class="customers-link">
               <svg class="customers-icon" width="104" height="56">
                 <use href="./images/icons.svg#icon-group"></use>
@@ -355,7 +418,6 @@
         <ul class="flexed-list list footer-list">
           <li class="footer-icons">
             <a href="" class="footer-links">
-
               <svg class="footer-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
@@ -407,7 +469,7 @@
 
   <div class="modal is-hidden" data-modal>
     <div class="modal-container">
-      <button type="button" class="modal-btn" data-modal-close>
+      <button type="button" class="close-btn" data-modal-close>
         <svg class="modal-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
         </svg>
@@ -454,7 +516,8 @@
           <label class="modal-label input-text" for="user-comment">
             Comment
           </label>
-          <textarea class="modal-txtarea" id="user-comment" name="user-comment" placeholder="Text input" required></textarea>
+          <textarea class="modal-txtarea" id="user-comment" name="user-comment" placeholder="Text input"
+            required></textarea>
         </div>
 
         <div class="modal-form-container-label">
@@ -478,6 +541,7 @@
       </form>
     </div>
   </div>
+  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
