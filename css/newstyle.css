@@ -5,6 +5,9 @@ body {
   letter-spacing: 0.02rem;
   color: var(--slate);
   background-color: var(--white);
+}
+
+.lock{
   overflow: hidden;
 }
 
@@ -125,7 +128,7 @@ img {
 }
 
 .is-open{
-   position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -134,7 +137,6 @@ img {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .logo-header {
@@ -153,6 +155,7 @@ img {
   background-color: white;
   top: 0;
   left: 0;
+
 }
 
 .menu-toggle{
