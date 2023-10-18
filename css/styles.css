@@ -12,6 +12,12 @@ body {
   padding: 0;
 }
 
+.js-close-menu,
+.js-open-menu,
+.header-networks{
+  display: none;
+}
+
 :root {
   --slate: #434455;
   --light-slate: #8e8f99;
