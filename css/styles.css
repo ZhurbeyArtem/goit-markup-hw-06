@@ -805,10 +805,11 @@ img {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px;
 }
 
 .cards-item {
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 1);
   position: relative;
   overflow: hidden;
 
